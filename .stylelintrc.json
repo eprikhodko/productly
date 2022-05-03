@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "order/properties-alphabetical-order": null,
+    "selector-class-pattern": null,
+    "scss/at-mixin-pattern": "^[a-z][a-z0-9-_]*[a-z0-9]$"
+  },
+
+  "extends": [
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-rational-order",
+    "stylelint-config-prettier",
+    "stylelint-config-prettier-scss"
+  ]
+}
