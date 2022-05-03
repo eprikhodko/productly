@@ -1,4 +1,4 @@
-@use '../abstracts/variables';
+@use '../abstracts/constants';
 
 * {
   box-sizing: border-box;
@@ -12,5 +12,5 @@ body {
   // color: $color-dark-xl;
   font-weight: 400;
   font-size: 1rem;
-  font-family: variables.$opensans-font;
+  font-family: constants.$opensans-font;
 }

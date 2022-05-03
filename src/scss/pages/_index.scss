@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .promo__title {
+  color: $color-primary;
   font-weight: 700;
   font-size: rem(44px);
   font-family: $opensans-font;
