@@ -1,0 +1,16 @@
+@use '../abstracts/variables';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  // color: $color-dark-xl;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: variables.$opensans-font;
+}
