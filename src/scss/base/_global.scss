@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 * {
   box-sizing: border-box;
 }
@@ -10,5 +12,5 @@ body {
   // color: $color-dark-xl;
   font-weight: 400;
   font-size: 1rem;
-  // font-family: $arial-font;
+  font-family: variables.$opensans-font;
 }
