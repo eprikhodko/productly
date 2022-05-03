@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.promo__title {
+  font-size: rem(44px);
+  font-family: $opensans-font;
+  font-weight: 700;
+}
+
+.promo__text {
+  font-family: $poppins-font;
+}

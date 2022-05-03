@@ -29,10 +29,25 @@ module.exports = merge(common, {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          // // Extract styles into a separate file
+          // Extract styles into a separate file
           MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    'postcss-preset-env',
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            },
+          },
           // Compiles Sass to CSS
           'sass-loader',
         ],
