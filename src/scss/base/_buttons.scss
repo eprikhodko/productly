@@ -1,0 +1,11 @@
+@use '../abstracts/functions' as *;
+
+.button {
+  padding: em(11, 16) em(25, 16) em(13, 16);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: em(22, 16);
+  border-radius: 4px;
+  cursor: pointer;
+  //   transition: all 0.3s;
+}

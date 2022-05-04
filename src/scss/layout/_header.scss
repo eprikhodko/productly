@@ -1,0 +1,28 @@
+@use '../abstracts/constants' as *;
+
+.header {
+  padding: 15px 0 17px;
+  background: $color-light;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    padding: 0 10px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

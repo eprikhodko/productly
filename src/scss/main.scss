@@ -1,6 +1,15 @@
 @use 'vendors/normalize';
+
+// Base
+@use 'base/buttons';
 @use 'base/base';
 
-@use 'layout/wrapper';
+// Components
+@use 'components/contact-us';
 
+// Layout
+@use 'layout/wrapper';
+@use 'layout/header';
+
+// Pages
 @use 'pages/index';
