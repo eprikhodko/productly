@@ -1,8 +1,9 @@
 @use 'vendors/normalize';
 
 // Base
-@use 'base/buttons';
 @use 'base/base';
+@use 'base/logo';
+@use 'base/buttons';
 
 // Components
 @use 'components/promo';
