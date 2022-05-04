@@ -15,12 +15,18 @@ body {
   font-family: $opensans-font;
 }
 
+// h1 {
+//   color: $color-heading;
+//   font-weight: 700;
+//   font-size: rem(44px);
+//   font-family: $poppins-font;
+//   line-height: 1.23;
+// }
+
 h1 {
+  @include font(rem(44px), lh(54px, 44px));
   color: $color-heading;
-  font-weight: 700;
-  font-size: rem(44px);
   font-family: $poppins-font;
-  line-height: 1.23;
 }
 
 h2 {
