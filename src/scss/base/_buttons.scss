@@ -14,21 +14,23 @@
     color: $color-text;
     background: $color-light;
     border: 1px solid $color-border;
+
+    // here ampersand means bordered: '_bordered:hover'. Ampersand points to the parent. Here parent will be _bordered
+    // full name will be look like &_bordered:hover => .button_bordered:hover
+    &:hover {
+      background: $color-hovered;
+      border-color: $color-hovered;
+    }
   }
 
   &_colored {
     color: $color-light;
     background: $color-primary;
     border: 1px solid $color-primary;
-  }
 
-  &_colored:hover {
-    background: $color-additional;
-    border-color: $color-additional;
-  }
-
-  &_bordered:hover {
-    background: $color-hovered;
-    border-color: $color-hovered;
+    &:hover {
+      background: $color-additional;
+      border-color: $color-additional;
+    }
   }
 }
