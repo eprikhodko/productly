@@ -5,13 +5,11 @@
   $line-height,
   $weight: 700,
   $color: $color-text,
-  $font-family: $opensans-font,
   $style: normal
 ) {
   color: $color;
   font-weight: $weight;
   font-size: $font-size;
-  font-family: $font-family;
   font-style: $style;
   line-height: $line-height;
 }
