@@ -12,6 +12,6 @@
   @return math.div($pxValue, $parentFontSize) * 1em;
 }
 
-@function lh($pxValue, $parentFontSize) {
+@function line-height($pxValue, $parentFontSize) {
   @return math.div($pxValue, $parentFontSize);
 }
