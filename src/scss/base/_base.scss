@@ -9,13 +9,13 @@ html {
 }
 
 body {
+  @extend %font-primary;
   @include font(1rem, line-height(28px, 18px), 400, $color-text);
-  font-family: $opensans-font;
 }
 
 h1 {
+  @extend %font-additional;
   @include font(rem(44px), line-height(54px, 44px), 700, $color-heading);
-  font-family: $poppins-font;
 }
 
 h2 {
