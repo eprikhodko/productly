@@ -37,4 +37,10 @@
 .link-button {
   @extend %font-additional;
   @include font(1rem, line-height(24px, 16px), 600, $color-primary);
+  display: flex;
+  align-items: center;
+}
+
+.link-button__text {
+  margin-left: 9px;
 }
