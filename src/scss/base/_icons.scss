@@ -1,14 +1,7 @@
 @use '../abstracts/constants' as *;
 
 .ico {
-  // cursor: pointer;
-  display: inline-block;
-}
-
-.ico_play {
-  width: 18px;
-  height: 19px;
-  background-image: url('../assets/img/icons/play.svg');
+  display: block;
 }
 
 .icon-square {
@@ -23,10 +16,6 @@
     background-color: $color-yellow;
   }
 
-  &_violet {
-    background-color: $color-violet;
-  }
-
   &_red {
     background-color: $color-red;
   }
@@ -34,6 +23,29 @@
   &_blue {
     background-color: $color-blue;
   }
+
+  &_violet {
+    background-color: $color-violet;
+  }
+}
+
+.icon-round {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  &_white {
+    background-color: $color-light;
+  }
+}
+
+.ico_play {
+  width: 18px;
+  height: 19px;
+  background-image: url('../assets/img/icons/play.svg');
 }
 
 .ico_arrow {
@@ -58,4 +70,16 @@
   width: 15px;
   height: 17px;
   background-image: url('../assets/img/icons/clock.svg');
+}
+
+.ico_phone {
+  width: 13px;
+  height: 13px;
+  background-image: url('../assets/img/icons/phone.svg');
+}
+
+.ico_letter {
+  width: 11px;
+  height: 8px;
+  background-image: url('../assets/img/icons/letter.svg');
 }
