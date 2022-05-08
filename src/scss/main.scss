@@ -9,10 +9,12 @@
 @use 'components/promo';
 @use 'components/contact-us';
 @use 'components/navigation';
+@use 'components/tools';
 
 // Layout
 @use 'layout/wrapper';
 @use 'layout/header';
+@use 'layout/columns';
 
 // Pages
 @use 'pages/index';
