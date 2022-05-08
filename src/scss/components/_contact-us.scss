@@ -20,8 +20,9 @@
 .contact-us__contact-info {
   @include font(rem(25px), line-height(26px, 25px), 400);
   display: flex;
+  margin-bottom: 19px;
 
-  > span {
+  > div {
     margin-top: 3px;
   }
 }
