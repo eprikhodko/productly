@@ -1,0 +1,15 @@
+@use './constants' as *;
+
+%transition-color {
+  transition: color 0.1s ease-out;
+}
+
+%font-primary {
+  // font-family: $opensans-font;
+  font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+%font-additional {
+  // font-family: $poppins-font;
+  font-family: 'Poppins', Verdana, sans-serif;
+}

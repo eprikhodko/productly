@@ -3,3 +3,15 @@
 @function rem($pxValue) {
   @return math.div($pxValue, 16px) * 1rem;
 }
+
+// @function rem($pxValue) {
+//   @return math.div($pxValue, 16) * 1rem;
+// }
+
+@function em($pxValue, $parentFontSize) {
+  @return math.div($pxValue, $parentFontSize) * 1em;
+}
+
+@function line-height($pxValue, $parentFontSize) {
+  @return math.div($pxValue, $parentFontSize);
+}

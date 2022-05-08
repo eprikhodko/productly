@@ -1,0 +1,49 @@
+@use '../abstracts/constants' as *;
+
+@mixin font(
+  $font-size,
+  $line-height,
+  $weight: 700,
+  $color: $color-text,
+  $style: normal
+) {
+  color: $color;
+  font-weight: $weight;
+  font-size: $font-size;
+  font-style: $style;
+  line-height: $line-height;
+}
+
+@mixin columns($width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > * {
+    flex-basis: $width;
+  }
+}
+
+@mixin media-laptop {
+  @media (max-width: $content-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-big-width) {
+    @content;
+  }
+}
+
+@mixin media-mobilesmall {
+  @media (max-width: $mobile-small-width) {
+    @content;
+  }
+}

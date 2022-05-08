@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.tools__wrapper {
+  padding-bottom: 90px;
+  background: url('../assets/img/backgrounds/tools-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.tools__title {
+  max-width: 462px;
+  margin: 111px auto 70px;
+  text-align: center;
+}
+
+.tool__title {
+  margin-bottom: 16px;
+}
+
+.tools__button {
+  display: block;
+  margin: 60px auto 0;
+}

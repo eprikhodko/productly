@@ -1,0 +1,23 @@
+@use '../abstracts/constants' as *;
+@use '../abstracts/placeholders' as *;
+
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__item {
+  padding: 0 10px;
+}
+
+.navigation__link {
+  @extend %transition-color;
+  color: $color-heading;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary;
+  }
+}

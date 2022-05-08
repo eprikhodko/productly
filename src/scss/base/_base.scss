@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @extend %font-primary;
+  @include font(1rem, line-height(26px, 16px), 400, $color-text);
+}
+
+h1 {
+  @extend %font-additional;
+  @include font(rem(44px), line-height(54px, 44px), 700, $color-heading);
+}
+
+h2 {
+  @include font(rem(34px), line-height(46px, 34px), 700, $color-heading);
+}
+
+h3 {
+  @include font(rem(24px), line-height(34px, 24px), 700, $color-heading);
+}
+
+h4 {
+  @include font(rem(22px), line-height(30px, 22px), 600, $color-heading);
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.block-shadowed {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}

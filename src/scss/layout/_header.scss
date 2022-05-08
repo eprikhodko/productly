@@ -1,0 +1,28 @@
+@use '../abstracts/constants' as *;
+
+.header {
+  padding: 15px 0 17px;
+  background: $color-light;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__buttons {
+  // remove white space between buttons: https://stackoverflow.com/questions/43431856/remove-blank-spaces-between-buttons-in-html-css
+  font-size: 0;
+}
+
+.header__buttons {
+  > .button {
+    margin-left: 14px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

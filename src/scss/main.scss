@@ -1,3 +1,24 @@
 @use 'vendors/normalize';
-@use 'base/global';
+
+// Base
+@use 'base/base';
+@use 'base/buttons';
+@use 'base/icons';
+@use 'base/tags';
+
+// Components
+@use 'components/promo';
+@use 'components/contact-us';
+@use 'components/navigation';
+@use 'components/tools';
+@use 'components/strategies';
+@use 'components/about-us';
+
+// Layout
+@use 'layout/wrapper';
+@use 'layout/header';
+@use 'layout/columns';
+@use 'layout/footer';
+
+// Pages
 @use 'pages/index';
