@@ -4,12 +4,14 @@
 @use 'base/base';
 @use 'base/buttons';
 @use 'base/icons';
+@use 'base/tags';
 
 // Components
 @use 'components/promo';
 @use 'components/contact-us';
 @use 'components/navigation';
 @use 'components/tools';
+@use 'components/strategies';
 
 // Layout
 @use 'layout/wrapper';

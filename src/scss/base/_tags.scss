@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+.tags {
+  display: flex;
+
+  > * {
+    margin-right: 7px;
+  }
+}
+
+.tag {
+  @include font(rem(13px), line-height(28px, 13px), 400);
+  padding: 0 14px;
+  border-radius: 90px;
+  cursor: pointer;
+
+  &_selected {
+    color: $color-light;
+    background: $color-primary;
+  }
+
+  &_bordered {
+    border: 1px solid $color-border;
+  }
+
+  &_colored {
+    background: $color-tag;
+  }
+}
