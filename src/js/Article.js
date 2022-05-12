@@ -17,7 +17,7 @@ export class Article {
       (template += `<img class="strategy__image" src=${this.urlToImage} alt="strategy">`);
 
     if (this.title || this.tags) {
-      template += `<div class=strategy__content">`;
+      template += `<div class="strategy__content">`;
 
       this.title &&
         (template += `<h3 class="strategy__name">${this.title}</h3>`);
