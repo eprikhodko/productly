@@ -33,7 +33,6 @@ const data = [
 
 const STRATEGIES_TAGS_CONTAINER = document.querySelector('.strategies__tags');
 const TAGS = document.querySelectorAll('.strategies__tags .tag');
-const STRATEGIES = document.querySelectorAll('.strategy-wrapper .strategy');
 
 // по загрузке страницы? вызовем функцию addTagsClickHandler()
 window.onload = function () {
@@ -81,14 +80,17 @@ const selectClickedTag = (tag) => {
 };
 
 const showAllStrategies = () => {
-  STRATEGIES.forEach((strategy) => {
+  const strategies = document.querySelectorAll('.strategy-wrapper .strategy');
+
+  strategies.forEach((strategy) => {
     strategy.classList.remove('strategy_hidden');
   });
 };
 
 const filterStrategyBySelectedTag = (selectedTag) => {
+  const strategies = document.querySelectorAll('.strategy-wrapper .strategy');
   // будем перебирать все стратегии
-  STRATEGIES.forEach((strategy) => {
+  strategies.forEach((strategy) => {
     // сначала скроем эту стратегию
     strategy.classList.add('strategy_hidden');
     // выберем все теги этой стратегии, и будем проверять, равен ли какой то тег внутри стратегии, тегу, на который мы кликнули
