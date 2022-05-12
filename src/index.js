@@ -102,6 +102,7 @@ const filterStrategyBySelectedTag = (selectedTag) => {
 };
 
 const renderArticlesToDom = () => {
+  // очистим и получим враппер
   const strategiesWrapper = getStrategiesWrapper();
 };
 
