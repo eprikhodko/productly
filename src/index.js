@@ -118,11 +118,11 @@ const getStrategiesWrapper = () => {
   return STRATEGIES_CONTAINER;
 };
 
-const generateArticles = (articlesData) => {
+const generateArticles = (articlesDataFromAPI) => {
   let articles = [];
 
-  articlesData.forEach((articleDataObjectFromAPI) => {
-    articles.push(new Article(articleDataObjectFromAPI));
+  articlesDataFromAPI.forEach((articleDataObject) => {
+    articles.push(new Article(articleDataObject));
   });
 
   return articles;
