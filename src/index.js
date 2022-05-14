@@ -1,5 +1,6 @@
 import './scss/main.scss';
 import { Article } from './js/Article';
+import { Modal } from './js/Modal';
 
 const data = [
   {
