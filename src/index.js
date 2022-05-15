@@ -44,6 +44,9 @@ window.onload = function () {
   if (data) {
     renderArticlesToDom();
   }
+
+  // сгенерируем модалку из класса Modal
+  addToolsClickHandler();
 };
 
 const addTagsClickHandler = () => {
@@ -129,4 +132,20 @@ const generateArticles = (articlesDataFromAPI) => {
   });
 
   return articles;
+};
+
+const addToolsClickHandler = () => {
+  document.querySelector('.tools__button').addEventListener('click', () => {
+    generateToolsModal();
+  });
+};
+
+const generateToolsModal = () => {
+  renderModalWindow('test content for tools modal');
+};
+
+const renderModalWindow = (content) => {
+  let modal = new Modal('tools-modal');
+  modal.buildModal(content);
+  console.log(modal);
 };
