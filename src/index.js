@@ -1,6 +1,7 @@
 import './scss/main.scss';
 import { Article } from './js/Article';
 import { Modal } from './js/Modal';
+import { ArticleModal } from './js/ArticleModal';
 
 const data = [
   {
@@ -116,6 +117,8 @@ const renderArticlesToDom = () => {
   articlesData.forEach((article) => {
     strategiesWrapper.append(article.generateArticle());
   });
+
+  addStrategyClickHandler();
 };
 
 const getStrategiesWrapper = () => {
@@ -148,4 +151,26 @@ const renderModalWindow = (content) => {
   let modal = new Modal('tools-modal');
   modal.buildModal(content);
   console.log(modal);
+};
+
+const addStrategyClickHandler = () => {
+  document.querySelector('.strategy-wrapper').addEventListener('click', (e) => {
+    if (e.target.closest('.strategy')) {
+      let clickedStrategyId = e.target
+        .closest('.strategy')
+        .getAttribute('data-id');
+      let clickedStrategyData = getClickedData(clickedStrategyId);
+
+      renderArticleModalWindow(clickedStrategyData);
+    }
+  });
+};
+
+const getClickedData = (id) => {
+  return data.find((article) => article.id == id);
+};
+
+const renderArticleModalWindow = (article) => {
+  let modal = new ArticleModal('article-modal', article);
+  modal.renderModal();
 };
