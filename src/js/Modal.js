@@ -41,11 +41,11 @@ export class Modal {
 
     console.log(this.modal);
 
-    // // Bind Events
-    // this.bindEvents();
+    // Bind Events
+    this.bindEvents();
 
-    // // Open Modal
-    // this.openModal();
+    // Open Modal
+    this.openModal();
   }
 
   createDomNode(node, element, ...classes) {
@@ -75,7 +75,6 @@ export class Modal {
   }
 
   openModal() {
-    console.log(this.overlay);
     document.body.append(this.overlay);
   }
 
